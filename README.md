@@ -71,3 +71,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 ### Surge
 bf-toy.surge.sh
+prod.bf-toy.surge.sh
