@@ -1,6 +1,6 @@
 name: CI
 
-on: 
+on:
   pull_request:
     branches: [develop]
   push:
@@ -14,7 +14,7 @@ jobs:
       - name: Use NodeJS
         uses: actions/setup-node@v1
         with:
-          node-version: "12.x"
+          node-version: '12.x'
       - run: npm ci
       - run: npm run format:check
       - run: npm test -- --coverage
@@ -27,5 +27,5 @@ jobs:
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain bf-toy.surge.sh
         env:
-          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }} 
-          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }} 
+          SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
+          SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
