@@ -9,3 +9,9 @@ jobs:
         id: hello
         with:
           who-to-greet: 'World!!!'
+      - name: Echo string
+        run: |
+          echo "string"
+      - name: Echo time
+        run: |
+          echo "Time: ${{ steps.hello.outputs.time }}"
