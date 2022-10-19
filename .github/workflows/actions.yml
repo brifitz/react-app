@@ -15,4 +15,4 @@ jobs:
       - name: Echo time
         run: |
           echo "Time: ${{ steps.hello.outputs.time }}"
-          echo $MyKey
+          echo ${{MyKey}}
