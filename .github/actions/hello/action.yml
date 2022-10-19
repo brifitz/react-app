@@ -1,0 +1,14 @@
+name: Hello World
+author: Brian Fitz
+description: Some description
+inputs:
+  who-to-greet:
+    description: 'Who to greet'
+    required: true
+    default: Brian
+outputs:
+  time:
+    description: 'Greeting time'
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
